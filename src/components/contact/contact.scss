@@ -1,0 +1,108 @@
+@import "../../global.scss";
+
+.contact {
+    align-items: center;
+    background-image: url("../../../public/assets/background-3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.contact-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 90%;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    h1 {       
+        color: $mainColor;
+        font-size: 60px;
+        font-weight: 600;
+        padding-top: 20px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+    width: 70%;
+    }
+
+    input {
+        background-color: #d0d1d0;
+        border: 2px solid $mainColor;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        width: 500px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        @include mobile {
+            height: 20px;
+            justify-content: space-evenly;
+            width: 250px;
+        }
+    }
+
+    textarea {
+        background-color: #d0d1d0;
+        border: 2px solid $mainColor;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 16px;
+        height: 250px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        width: 500px;
+
+        @include mobile {
+            height: 275px;
+            width: 250px;
+        }
+    }
+
+    button {
+        background-color: #864942;
+        border: none;
+        border-radius: 10px;
+        color: $mainColor;
+        cursor: pointer;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        height: 60px;
+        margin-top: 20px;
+        width: 150px;
+
+        @include mobile {
+            margin-top: 20px;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            background-color: $mainColor;
+            color: #d0d1d0;
+        }
+    }

@@ -1,0 +1,101 @@
+@import "../../global.scss";
+
+.portfolio {
+    align-items: center;
+    background-color: #864942;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        color: $mainColor;
+        font-size: 60px;
+        font-weight: 600;
+        padding-top: 40px;
+
+        @include mobile {
+            font-size: 45px;
+            overflow: hidden;
+            padding: 25px 0;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 20px;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    .container {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        .item {
+            align-items: center;
+            border: 1px solid $mainColor;          
+            border-radius: 20px;
+            color: #d0d1d0;
+            cursor: pointer;
+            display: flex;
+            height: 190px;
+            justify-content: center;
+            margin: 10px 20px;
+            position: relative;
+            transition: all .5s ease;
+            width: 280px;
+
+            @include mobile {
+                height: 115px;
+                width: 145px;
+            }
+
+            h3 {
+                color: #d0d1d0;
+                font-size: 20px;
+                position: absolute;
+            }
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+                z-index: 1;
+            }
+
+            &:hover {
+                background-color: $mainColor;
+                color: #d0d1d0;
+                
+                img {
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                h3 {
+                    color: #d0d1d0;
+                }
+
+                a {
+                    all: unset;
+                }
+            }
+        }
+    }
+}

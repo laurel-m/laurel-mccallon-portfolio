@@ -1,0 +1,54 @@
+@import "../../global.scss";
+
+.menu {
+    align-items: center;
+    background-color: #864942;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: -285px;
+    transition: all 1s ease;
+    width: 285px;
+    z-index: 2;
+
+    &.active {
+        right: 0;
+
+        @include mobile {
+            width: 50%;
+        }
+    }
+
+    ul{
+        color: $mainColor;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 500;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+
+        li{
+            margin-bottom: 25px;
+
+            a{
+                color: $mainColor;
+                font-size: inherit;
+                text-decoration: none;
+
+                @include mobile {
+                    font-size: 25px;
+                }
+                
+            }
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
+    }
+}
