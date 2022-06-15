@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/laurel-mccallon-portfolio/static/css/main.063fbd4d.css",
+    "main.css": "/laurel-mccallon-portfolio/static/css/main.1bce9636.css",
     "main.js": "/laurel-mccallon-portfolio/static/js/main.abf7df98.js",
     "static/media/video-2.mp4": "/laurel-mccallon-portfolio/static/media/video-2.a616f52d39ed64408c08.mp4",
     "static/media/hiking.jpg": "/laurel-mccallon-portfolio/static/media/hiking.2439358189e765aa0c4a.jpg",
     "static/media/background-3.jpg": "/laurel-mccallon-portfolio/static/media/background-3.07a347d2dbe48466c676.jpg",
     "index.html": "/laurel-mccallon-portfolio/index.html",
-    "main.063fbd4d.css.map": "/laurel-mccallon-portfolio/static/css/main.063fbd4d.css.map",
+    "main.1bce9636.css.map": "/laurel-mccallon-portfolio/static/css/main.1bce9636.css.map",
     "main.abf7df98.js.map": "/laurel-mccallon-portfolio/static/js/main.abf7df98.js.map"
   },
   "entrypoints": [
-    "static/css/main.063fbd4d.css",
+    "static/css/main.1bce9636.css",
     "static/js/main.abf7df98.js"
   ]
 }
