@@ -49,10 +49,10 @@ video {
         width: 840px;
 
         @include mobile {
-            align-items: center;
+            // align-items: center;
             background-color: #2b313e;
-            flex-direction: column;
-            justify-content: center;
+            // flex-direction: column;
+            // justify-content: center;
             height: 65%;
             opacity: 0.75;
             padding: 10px;
@@ -93,8 +93,4 @@ video {
     position: absolute;
     top: 0;
     width: 100%;
-
-    @include mobile {
-        height: 50%;
-    }
 }
