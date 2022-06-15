@@ -15,7 +15,7 @@
         @include mobile {
             font-size: 45px;
             overflow: hidden;
-            padding: 25px 0;
+            padding: 15px 0;
         }
     }
 
@@ -28,7 +28,7 @@
             flex-wrap: wrap;
             justify-content: center;
             margin: 0;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
     }
 
@@ -58,8 +58,8 @@
             width: 280px;
 
             @include mobile {
-                height: 115px;
-                width: 145px;
+                height: 98px;
+                width: 38%
             }
 
             h3 {

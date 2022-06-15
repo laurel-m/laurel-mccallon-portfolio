@@ -28,6 +28,7 @@ export default function ContactUs () {
           <textarea name="message"placeholder="Your Message"  />
           <button type="submit" value="Send">Send</button>
         </form>
+        <p>Copyright 2022 | Laurel McCallon</p>
       </div>
     </div>
   );

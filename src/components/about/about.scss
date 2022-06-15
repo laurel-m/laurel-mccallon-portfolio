@@ -3,88 +3,89 @@
 
 .about {
     align-items: center;
-    background-color: $mainColor;
     display: flex;
     height: 100vh;
     justify-content: center;
     margin: 0;
+    overflow: hidden;
     padding: 0;
     width: 100%;
 
-    p {
-        font-family: 'Tenor Sans', sans-serif;
-        font-size: 18px;
+    .about-left {
+        background-color: $mainColor;
+        flex: 0.3;
+        height: 100%;
+        object-fit: cover;
 
         @include mobile {
-            font-size: 16px;
+            flex: 0;
         }
     }
 
-    h1 {
-        color: #d0d1d0;
-        // font-family: 'Comforter Brush', cursive;
-        font-size: 60px;
-        font-weight: 500;
-        padding-bottom: 15px;
+    .about-right {
+        background-image: url("../../../public/assets/hiking.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex: 0.7;
+        height: 100%;
+        object-fit: cover;
 
         @include mobile {
-            font-family: 'Poppins', sans-serif;
-            font-size: 42px;
+            flex: 1;
+        }
+    }
+
+    .about-content {
+        align-items: center;
+        color: #d0d1d0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+
+        .about-text {
+            align-items: center;
+            background-color: ghostwhite;
+            border: 6px solid #864942;
+            color: $mainColor;
+            display: flex;
+            flex-direction: column;
+            height: 350px;
+            justify-content: center;
+            opacity: 0.85;
+            padding: 30px;
+            width: 800px;
+
+            @include mobile {
+                height: 55%;
+                padding: 20px;
+                width: 75%;
+            }
+
+            h1 {
+                font-size: 50px;
+                font-weight: 600;
+
+                @include mobile {
+                    font-size: 45px;
+                }
+            }
+
+            p {
+                font-family: 'Tenor Sans', sans-serif;
+                font-size: 18px;
+                text-align: center;
+            }
+
+            @include mobile {
+
+                p {
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
-
-    .photo-slider {
-        align-items: center;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        max-width: 1000px;
-        margin: 0 auto;
-        width: 90%;
-        
-        @include mobile {
-            width: 100%;
-        }
-
-        .hiking {
-            background-image: url("../../../public/assets/hiking.jpg");
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-            height: 600px;
-            margin-left: -175px;
-            padding: 10px;     
-            width: 50%;
-            z-index: 1;
-
-            @include mobile {
-                height: 550px;
-                width: 55%;
-            }
-        }
-
-        .background {
-            align-items: center;
-            background-color: #864942;
-            background-clip: padding-box;
-            border: 7px solid rgba(255,255,255,.5);
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-            color: #d0d1d0;
-            font-size: 18px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            min-height: 460px;
-            opacity: 0.95;
-            padding: 30px;
-            width: 42%;
-            z-index: 2;
-
-                
-            @include mobile {
-                width: 55%;
-            }
-        }
-    }

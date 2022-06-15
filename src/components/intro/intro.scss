@@ -46,7 +46,7 @@ video {
         flex-direction: column;
         height: 200px;
         justify-content: center;
-        width: 690px;
+        width: 840px;
 
         @include mobile {
             align-items: center;
@@ -55,7 +55,8 @@ video {
             justify-content: center;
             height: 65%;
             opacity: 0.75;
-            width: 75%;
+            padding: 10px;
+            width: 70%;
             text-align: center;
         }
     }
@@ -67,14 +68,18 @@ video {
         margin-bottom: 10px;   
 
         @include mobile {
-            font-size: 52px;
-            margin-bottom: 60px;
+            font-size: 45px;
+            margin-bottom: 40px;
         }
     }
 
     h2 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 25px;
+        font-size: 26px;
+        
+        @include mobile {
+        font-size: 18px;
+        }
 
         span {
             font-family: 'Tenor Sans', sans-serif;

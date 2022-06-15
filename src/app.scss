@@ -1,3 +1,5 @@
+@import "../../portfolio/src/global.scss";
+
 .app {
    height: 100vh;
    
@@ -10,6 +12,11 @@
         scroll-snap-type: y mandatory;
         top: 70px;
         width: 100%;
+
+        @include mobile {
+            scroll-snap-type: none;
+        }
+
         &::-webkit-scrollbar{
             display: none;
         } //for chrome, safari, etc.
