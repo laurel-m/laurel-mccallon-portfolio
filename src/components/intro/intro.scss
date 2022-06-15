@@ -55,7 +55,7 @@ video {
             justify-content: center;
             opacity: 0.75;
             padding: 10px;
-            width: 55%;
+            width: 70%;
             text-align: center;
         }
     }
@@ -75,14 +75,14 @@ video {
     h2 {
         font-family: 'Tenor Sans', sans-serif;
         font-size: 26px;
-        
-        @include mobile {
-        font-size: 16px;
-        }
 
         span {
             font-family: 'Tenor Sans', sans-serif;
         }
+
+        @include mobile {
+            font-size: 16px;
+            }
     }
 }
 
@@ -92,4 +92,8 @@ video {
     position: absolute;
     top: 0;
     width: 100%;
+
+    @include mobile {
+        height: 50%;
+    }
 }
