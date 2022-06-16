@@ -43,9 +43,9 @@ video {
         border: 5px solid $mainColor;
         display: flex;
         flex-direction: column;
-        height: 240px;
+        height: 200px;
         justify-content: center;
-        width: 800px;
+        width: 690px;
 
         @include mobile {
             align-items: center;
@@ -55,7 +55,7 @@ video {
             justify-content: center;
             opacity: 0.75;
             padding: 10px;
-            width: 70%;
+            width: 75%;
             text-align: center;
         }
     }
@@ -67,7 +67,7 @@ video {
         margin-bottom: 10px;   
 
         @include mobile {
-            font-size: 38px;
+            font-size: 42px;
             margin-bottom: 40px;
         }
     }
@@ -81,7 +81,7 @@ video {
         }
 
         @include mobile {
-            font-size: 16px;
+            font-size: 20px;
             }
     }
 }
