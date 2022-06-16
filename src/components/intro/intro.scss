@@ -13,7 +13,7 @@
 
 .main {
     height: 100vh;
-    overflow: hidden;
+    // overflow: hidden;
     width: 100%;
 
     @include mobile {
@@ -46,7 +46,7 @@ video {
         flex-direction: column;
         height: 200px;
         justify-content: center;
-        width: 690px;
+        width: 820px;
 
         @include mobile {
             align-items: center;
@@ -67,8 +67,8 @@ video {
         margin-bottom: 10px;   
 
         @include mobile {
-            font-size: 52px;
-            margin-bottom: 60px;
+            font-size: 40px;
+            margin-bottom: 38px;
         }
     }
 
@@ -78,6 +78,10 @@ video {
 
         span {
             font-family: 'Tenor Sans', sans-serif;
+        }
+
+        @include mobile {
+            font-size: 20px;
         }
     }
 }

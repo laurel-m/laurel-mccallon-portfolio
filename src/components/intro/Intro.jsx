@@ -20,7 +20,7 @@ export default function Intro() {
             <video src={video} autoPlay loop muted />
             <div className="content">
                 <div className="text-box">
-                    <h1>Hello. I'm Laurel,</h1>
+                    <h1>Hello. I'm Laurel McCallon,</h1>
                     <h2>a front-end developer creating <span ref={textRef}></span> web layouts.</h2>
                 </div>
             </div>
