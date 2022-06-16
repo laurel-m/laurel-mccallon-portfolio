@@ -1,5 +1,4 @@
-import "./about.scss"
-import 'animate.css';
+import "./about.scss";
 
 export default function About() {
   return (

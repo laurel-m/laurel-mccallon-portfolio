@@ -1,5 +1,4 @@
 @import "../../global.scss";
-@import 'animate.css';
 
 .about {
     align-items: center;
@@ -15,7 +14,6 @@
         background-color: $mainColor;
         flex: 0.3;
         height: 100%;
-        object-fit: cover;
 
         @include mobile {
             flex: 0;
@@ -29,7 +27,6 @@
         background-repeat: no-repeat;
         flex: 0.7;
         height: 100%;
-        object-fit: cover;
 
         @include mobile {
             flex: 1;

@@ -19,6 +19,7 @@
     @include mobile {
         height: 50%;
     }
+
 }
 
 video {
@@ -45,16 +46,15 @@ video {
         flex-direction: column;
         height: 200px;
         justify-content: center;
-        width: 710px;
+        width: 690px;
 
         @include mobile {
             align-items: center;
             background-color: #2b313e;
             flex-direction: column;
-            height: 65%;
             justify-content: center;
+            height: 65%;
             opacity: 0.75;
-            padding: 10px;
             width: 75%;
             text-align: center;
         }
@@ -63,26 +63,22 @@ video {
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 60px;
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 10px;   
 
         @include mobile {
-            font-size: 42px;
-            margin-bottom: 40px;
+            font-size: 52px;
+            margin-bottom: 60px;
         }
     }
 
     h2 {
         font-family: 'Tenor Sans', sans-serif;
-        font-size: 26px;
+        font-size: 25px;
 
         span {
             font-family: 'Tenor Sans', sans-serif;
         }
-
-        @include mobile {
-            font-size: 20px;
-            }
     }
 }
 
