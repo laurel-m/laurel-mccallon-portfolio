@@ -74,6 +74,10 @@
                 object-fit: cover;
                 width: 100%;
                 z-index: 1;
+
+                @include mobile {
+                    border-radius: 20px;
+                }
             }
 
             &:hover {
